@@ -60,7 +60,7 @@ To run this portfolio locally on your machine, follow these steps:
 
    - Clone this GitHub repository to your local machine using the following command:
      ```bash
-     git clone [https://github.com/GaurangJotwani/my-portfolio.git](https://github.com/JishvaShah/Personal-Homepage)
+     git clone (https://github.com/JishvaShah/Personal-Homepage)
      ```
 
 2. **Navigate to the Project Directory**[![image](https://github.com/JishvaShah/Personal-Homepage/assets/77269630/0ac252e6-c7b6-41a6-82a0-c60819729411)
