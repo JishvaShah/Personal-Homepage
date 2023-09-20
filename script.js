@@ -1,4 +1,4 @@
-var sidemenu=document.getElementById("sidemenu");
+
 var tablinks=document.getElementsByClassName("tab-links");
 var tabcontents=document.getElementsByClassName("tab-contents");
 function opentab(tabname){
