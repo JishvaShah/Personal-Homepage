@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="./contact-script.js"></script>     -->
+    <script src="https://kit.fontawesome.com/026e21d97a.js" crossorigin="anonymous"></script>
+    <link href="./contact-styles.css" rel="stylesheet" />
+    <title>Let's Connect</title>
+</head>
+<body>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p><i class="fa-solid fa-location-dot"></i> San Francisco Bay Area, CA</p>
+                    <p><i class="fa-regular fa-envelope"></i> shah.jish@northeastern.edu</p>
+                    <p><i class="fa-solid fa-phone"></i> (669) 265-9118</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="images/Jishva-shah-resume.pdf" download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwulcGxXqASM991XfHSCC1TnLK8uXrQw07BpeUpcNRnlvFWDVKKGxuPmF2zQiZdjVGn/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>

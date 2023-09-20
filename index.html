@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/026e21d97a.js" crossorigin="anonymous"></script>
+    <link href="./styles.css" rel="stylesheet" />
+    <title>My Homepage</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/uni-logo1.png" class="logo" alt="university logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="images/Jishva-shah-resume.pdf">Resume</a></li>
+                    <li><a href="./contact-page.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Development Engineer</p>
+                <h1>Hi, I'm Jishva Shah.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Me -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h3>About Me</h3>                    
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">What do i do?</h3>
+                    <p>I am currently pursuing Master's in Computer Science. I specialize<br>
+                        in creating end-to-end web applications by seamlessly integrating front-end<br>
+                        and back-end technologies. As an aspiring Full Stack Developer, I handle<br>
+                        everything from designing and developing user-friendly interfaces to<br>
+                        implementing robust server-side logic and database management.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C++, JAVA, R, Python, HTML, CSS, Javascript(ES6)</li>
+                            <li><span>Frameworks</span><br>SpringBoot, Hibernate, JSP, Servlets, Github, Maven</li>
+                            <li><span>Databases</span><br>MySQL, Oracle Database, SQLite</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2023 - Present</span><br>Teaching Assistant - Algorithms at Northeastern University</li>
+                            <li><span>Feb 2023 - April 2023</span><br>Teaching Assistant - Computer Networking at Northeastern University</li>
+                            <li><span>Feb 2021 - July 2021</span><br>Software Programmer Intern at Inforaam.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sept 2022 - Present</span><br>Master's in Computer Science from Northeastern University</li>
+                            <li><span>Aug 2017 - July 2021</span><br>Bachelors in Computer Engineering from Gujarat Technological University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/project-1.png" alt="project image 1">
+                    <div class="layer">
+                        <h3>Medical Assistant App</h3>
+                        <p>Developed a web application to provide users with easy 
+                        access to health-related information, leveraging JavaBeans
+                        and maven for back-end processes and MySQL for database management.</p>
+                        <a href="#"><i class="fa-solid fa-stethoscope"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-2.png" alt="project image 2"> 
+                    <div class="layer">
+                        <h3>Project Management System</h3>
+                        <p>Developed a version control system inspired by GitHub in 
+                        Java implementing the Spring framework, allowing teams to work 
+                        seamlessly without losing data or changes made to a project.</p>
+                        <a href="#"><i class="fa-solid fa-diagram-project"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/project-3.png" alt="project image 3">
+                    <div class="layer">
+                        <h3>Library Management System</h3>
+                        <p>Designed a website for the university library where students
+                        can purchase and return the books online and the staff can also 
+                        manage work on the website at one’s own comfort.</p>
+                        <a href="#"><i class="fa-solid fa-book-open"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="./contact-page.html" class="btn">Connect with Me!</a>
+        </div>
+    </div>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</body>
+</html>
+
