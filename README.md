@@ -6,7 +6,7 @@ Welcome to my online portfolio project. This portfolio showcases my skills, proj
 
 ## Website
 
-Visit my portfolio website: https:https://jishvashah.github.io/Personal-Homepage/
+Visit my portfolio website: https://jishvashah.github.io/Personal-Homepage/
 ![image](https://github.com/JishvaShah/Personal-Homepage/assets/77269630/c23cf0c9-a8fc-406a-8f83-56e99bf47827)
 Visit my figma mockups here: https://www.figma.com/file/axh2del8E8vYkDhPu13Pw0/Portfolio?type=design&node-id=0%3A1&mode=design&t=bW6CFdsusehduDNv-1
 Visit my presentation slides here: https://docs.google.com/presentation/d/1CJ6aWc1yP7MGTvYL0PTyFXk7K8AMro7mucZo1Z5guS4/edit?usp=drive_link
