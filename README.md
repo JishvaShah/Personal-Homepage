@@ -4,6 +4,9 @@ Welcome to my online portfolio project. This portfolio showcases my skills, proj
 
 ### NOTE: All my code lies in the master branch of the repository and not in the main branch.
 
+## Design Document:
+https://docs.google.com/presentation/d/1oZTl0KDXt3iH_CwJZkQFPJ-mNngYbwI6q9NoBhK_tZE/edit?usp=sharing
+
 ## Website
 
 Visit my portfolio website: https://jishvashah.github.io/Personal-Homepage/
